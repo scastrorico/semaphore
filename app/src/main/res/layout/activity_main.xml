@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/ImageViewSemaphore"
+            android:layout_width="wrap_content"
+            android:layout_height="800px"
+            android:src="@drawable/semaphore"/>
+
+        <ImageView
+            android:id="@+id/ImageViewRedLight"
+            android:layout_marginTop="15px"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/red_light"/>
+
+        <ImageView
+            android:id="@+id/ImageViewYellowLight"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yellow_light"/>
+
+        <ImageView
+            android:id="@+id/ImageViewGreenLight"
+            android:layout_marginBottom="15px"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/green_light"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
