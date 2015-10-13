@@ -16,7 +16,9 @@ import android.widget.ImageView;
 public class MainActivity extends Activity implements View.OnClickListener {
 
     public static final int SEMAPHORE_IMAGE_HEIGHT = 800;
+    public static final int SEMAPHORE_IMAGE_WIDTH = 360;
     public static final int LIGHT_IMAGE_HEIGHT = 225;
+    public static final int LIGHT_IMAGE_WIDTH = 225;
     public static final int LIGHT_IMAGE_MARGIN = 15;
 
     private enum Light {
@@ -85,14 +87,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
         float resizeFactor = (float)screenHeight / SEMAPHORE_IMAGE_HEIGHT;
 
         mImageViewSemaphore.getLayoutParams().height = (int)(SEMAPHORE_IMAGE_HEIGHT * resizeFactor);
+        mImageViewSemaphore.getLayoutParams().width = (int)(SEMAPHORE_IMAGE_WIDTH * resizeFactor);
 
         mImageViewRedLight.getLayoutParams().height =  (int)(LIGHT_IMAGE_HEIGHT * resizeFactor);
+        mImageViewRedLight.getLayoutParams().width =  (int)(LIGHT_IMAGE_WIDTH * resizeFactor);
         ((FrameLayout.LayoutParams)mImageViewRedLight.getLayoutParams()).topMargin =
                 (int)(LIGHT_IMAGE_MARGIN * resizeFactor);
 
         mImageViewYellowLight.getLayoutParams().height =  (int)(LIGHT_IMAGE_HEIGHT * resizeFactor);
+        mImageViewYellowLight.getLayoutParams().width =  (int)(LIGHT_IMAGE_WIDTH * resizeFactor);
 
         mImageViewGreenLight.getLayoutParams().height =  (int)(LIGHT_IMAGE_HEIGHT * resizeFactor);
+        mImageViewGreenLight.getLayoutParams().width =  (int)(LIGHT_IMAGE_WIDTH * resizeFactor);
         ((FrameLayout.LayoutParams)mImageViewGreenLight.getLayoutParams()).bottomMargin =
                 (int)(LIGHT_IMAGE_MARGIN * resizeFactor);
     }
